@@ -1,8 +1,9 @@
+import Layout from "@/components/layout"
 
 const index = () => {
      ////max-w-2xl
   return (
-    <>
+    <Layout>
 
 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto  lg:py-0">
     <div className="relative w-full  h-full md:h-auto">
@@ -19,10 +20,28 @@ const index = () => {
                 </button>
             </div>
             <form action="#" className="border-b sm:mb-5 dark:border-gray-600">
-                <div className="grid gap-4 mb-4 sm:grid-cols-3">
+                <div className="grid gap-4 mb-4 sm:grid-cols-4">
+                <div>
+                        <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sede</label>
+                        <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">MetalMecanica</option>
+                            <option value="TV">Calle 30</option>
+                            <option value="PC">Nodo TIC</option>
+                        </select>
+                    </div>
                     <div>
                         <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Programa</label>
                         <input type="text" name="name" id="name" value="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Analisis y Desarrollo de Software"/>
+                    </div>
+
+                        <div>
+                        <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ficha</label>
+                        <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">2482004</option>
+                            <option value="TV">2584155</option>
+                            <option value="PC">2148419</option>
+                            <option value="GA">4847848</option>
+                        </select>
                     </div>
                         <div>
                         <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Trimestre</label>
@@ -33,30 +52,27 @@ const index = () => {
                             <option value="GA">Cuarto</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sede</label>
-                        <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option selected="">MetalMecanica</option>
-                            <option value="TV">Calle 30</option>
-                            <option value="PC">Nodo TIC</option>
-                        </select>
-                    </div>
+
                 </div>
 
             </form>
             
             <div className="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Agregar Asignaturas
+                Agregar Competencias
             </h3>
             </div>
             <form action="#" >
                 <div className="grid gap-4 mb-4 sm:grid-cols-3 ">
-                    <div>
-                        <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asignatura</label>
-                        <input type="text" name="name" id="name" value="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Desarrollar la solucion..."/>
+                <div>
+                        <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Competencias</label>
+                            <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">Especificacion de requisitos</option>
+                            <option value="TV">Analisis de especificacion de requisitos</option>
+                            <option value="PC">Elaboracion de propuesta tecnica del Software</option>
+                        </select>
                     </div>
-                        <div>
+                   <div>
                         <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Instructor</label>
                         <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             <option selected="">Pepe Quintana</option>
@@ -64,31 +80,9 @@ const index = () => {
                             <option value="PC">zzz</option>
                             <option value="GA">zzz</option>
                         </select>
-                    </div>
-                    <div>
-                        <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Result. Aprendizaje</label>
-                        <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option selected="">#1</option>
-                            <option value="TV">#2</option>
-                            <option value="PC">#3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ambiente</label>
-                        <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option selected="">DIM1</option>
-                            <option value="TV">SOFT1</option>
-                            <option value="PC">AUX2</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hora Inicio</label>
-                        <input type="time" name="name" id="name" value="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Desarrollar la solucion..."/>
-                    </div>
-                    <div>
-                        <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hora Fin</label>
-                        <input type="time" name="name" id="name" value="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Desarrollar la solucion..."/>
-                    </div>
+                    </div> 
+
+                    
                 </div>
                 <div className="flex items-center space-x-4 border-b sm:mb-5 dark:border-gray-600">
                     <button type="submit" className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ">
@@ -120,6 +114,9 @@ const index = () => {
                 <th scope="col" class="px-6 py-3">
                     Sabado
                 </th>
+                <th scope="col" class="px-6 py-3">
+                    Acciones
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -141,6 +138,9 @@ const index = () => {
                 </td>
                 <td class="px-6 py-4">
                     XXXXX
+                </td>
+                <td class="px-6 py-4">
+                    <a href="">Editar</a>
                 </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800">
@@ -193,7 +193,7 @@ const index = () => {
 
 
 
-    </>
+    </Layout>
   )
 }
 

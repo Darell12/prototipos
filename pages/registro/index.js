@@ -1,8 +1,9 @@
+import LayoutAuth from "@/components/layoutAuth"
 import Link from "next/link"
 
 const index = () => {
   return (
-    <>
+    <LayoutAuth>
     <section class="bg-gray-50 dark:bg-gray-900">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -61,14 +62,6 @@ const index = () => {
 
 
               </form>
-                    <div class="flex items-start">
-                      <div class="flex items-center h-5">
-                        <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
-                      </div>
-                      <div class="ml-3 text-sm justify-center">
-                        <label for="terms" class="font-light text-gray-500 dark:text-gray-300">Acepto los <Link class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/terminos">Terminos y condiciones</Link></label>
-                      </div>
-                  </div>
                   <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Crear cuenta</button>
                     <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                       Ya tienes una Cuenta? <Link href="/login" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Inicia Sesión aquí</Link>
@@ -77,7 +70,7 @@ const index = () => {
       </div>
   </div>
 </section>
-    </>
+    </LayoutAuth>
   )
 }
 
